@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css\style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+            <header>
+                <button id= "prev"><</button>
+                <h1 class="month" data-this-date="2018-01-01"></h1>
+                <button id= "next">></button>
+            </header>
+            <ul class="month-list"></ul>
+  </div>
+        <script id="days-template" type="text/x-handlebars-template">
+          <li data-complete-date="{{numeri}}">{{day}} {{month}}</li>
+        </script>
+
+<script src="js\script.js" charset="utf-8"></script>
+
+</body>
+</html>
